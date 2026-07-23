@@ -1,2 +1,12 @@
 # api-55
-this is a project for api for e-commerce platform 
+ 
+## Backend server side program 
+- API (Application Programming Interface)
+  - Endpoints (Url -- request receiving endpoints)
+
+## Setup - Server Ready
+  - core nodejs
+  - Express (framework)
+
+## Node Project 
+  - `package.json`
