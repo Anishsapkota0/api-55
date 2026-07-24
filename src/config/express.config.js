@@ -27,13 +27,22 @@ app.get("/about-us",(req,res)=>{
    })
 })
 
-app.get("/login",(req,res)=>{
+app.post("/login",(req,res)=>{
    res.json({
     data : "about us",
     message: "Login success ",
     status : "OK"
    })
 })
+
+app.post("/register",(req,res)=>{
+   res.json({
+    data : "about us",
+    message: "Login success ",
+    status : "OK"
+   })
+})
+
 
 app.use("/test",(req,res)=>{
     //this is a test router

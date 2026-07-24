@@ -33,3 +33,25 @@
     - put/patch
   - Delete
    - delete
+
+## HTTP Response
+  - Success
+    - 2xx -> 200 (OK, success). ,201(CREATED),  204(NO_CONTENT)
+  - Redirection
+    - 3xx -> 301 (Permanent_Redirect), 302(FOUND), 304(NOT_MODIFIED)
+  - client side errors
+    - 4xx -> 400(BAD_REQUEST), 401(UNAUTHORIZED), 403(ACCESS_DENIED), 404(NOT_FOUND), 405(METHOD_NOT_ALLOWED), 408(REQUEST_TIMEOUT), 413(TOO_LARGE_CONTENT), 422(UNPROCESSAVLE_ENTITY), 429(TOO_MANY_REQUEST)
+  - Server side errors
+    - 5xx -> 500(INTERNAL_SERVER_ERROR), 502(BAD_GATEWAY), 503(SERVICE_UNAVAILABLE), 504(GATEWAY_TIMEOUT)
+
+## Solid Principles of software development
+  - single Responsibility principle
+    - function, class, variables, objects should only have a single responsibility
+  - Open-close Principle
+    - Open to expansion but close to modification
+  - Liskov-Substitute Principle
+    - while substuting some service or function, the impact should not be harming
+  - Interface- segregation Principle
+    - Breakdown or segregate the data interface
+  - Dependency Inversion Principle
+    - load inversion for the dependency
