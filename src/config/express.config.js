@@ -6,7 +6,17 @@ const app = express()
 
 app.get("/",(req,res)=>{
 
-res.send("Home world")
+    res.json({
+        data: "any",
+        //error : "any",
+        message : "Notify",
+        status : "OK"
+    })
+
+    //res.end("Hello world")
+    //res.render("View file path")
+    //res.redirect("/path")
+    //res.send("Home world") 
 })
 
 app.get("/about-us",(req,res)=>{
