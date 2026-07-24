@@ -23,3 +23,13 @@
     c. Global dependency
       - which is required to all or many projects
       - Install command (pnpm) `pmpm <i> <packageName> -g` or `pnpm i --save-global <packageName`
+
+## CRUD Opwearions
+  - Create 
+    - post 
+  - Read
+    - get
+  - Update
+    - put/patch
+  - Delete
+   - delete
