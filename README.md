@@ -81,4 +81,14 @@
   - chat
 
 ## MVC Pattern 
+  - 3 tire architecture
+  - Data Layer/ database layer
+  - application/logical/business layer
+  - Presentation/view layer
+
+- View <====> Request to application Layer <====> Data layer process (Query)
+- Reactjs <====> (Nodejs + Expressjs.  API/BE/SERVER) <====> Database (MongoDb, PostgreSQL)
+- View <====> controller <====> Model
+
+- JSON (view) <====> BE server
 
