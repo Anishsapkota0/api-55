@@ -51,7 +51,34 @@
     - Open to expansion but close to modification
   - Liskov-Substitute Principle
     - while substuting some service or function, the impact should not be harming
-  - Interface- segregation Principle
+  - Interface - segregation Principle
     - Breakdown or segregate the data interface
   - Dependency Inversion Principle
     - load inversion for the dependency
+
+
+## Features
+- Portfolio Website
+  - Auth Features
+    - Login
+    - Register
+    - Activate
+    - Forget Password
+    - Reset Password
+    - Logout
+    - Dashboard Access
+  
+  - Profile
+    - CRUD
+  
+  - banner
+  - brand 
+  - category
+  - product
+  - user 
+  - order
+  - transaction
+  - chat
+
+## MVC Pattern 
+
