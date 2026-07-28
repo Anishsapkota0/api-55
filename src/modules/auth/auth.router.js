@@ -1,19 +1,8 @@
 const authRouter = require("express").Router()
+const authCtrl = require("./auth.controller")
 
-authRouter.post("/login",(req,res)=>{
-   res.json({
-    data : "about us",
-    message: "Login success ",
-    status : "OK"
-   })
-})
+authRouter.post("/login",authCtrl.loginFunction)
 
-authRouter.post("/register",(req,res)=>{
-   res.json({
-    data : "about us",
-    message: "Login success ",
-    status : "OK"
-   })
-})
+authRouter.post("/register",authCtrl.registerFunction)
 
 module.exports= authRouter

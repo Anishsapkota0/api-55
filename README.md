@@ -90,5 +90,15 @@
 - Reactjs <====> (Nodejs + Expressjs.  API/BE/SERVER) <====> Database (MongoDb, PostgreSQL)
 - View <====> controller <====> Model
 
-- JSON (view) <====> BE server
+- JSON (view) <====> BE server 
+
+## Operations
+  - create 
+    - post
+  - Read 
+    - get
+  - Update 
+    - put/patch 
+  - Delete
+    -delete
 
