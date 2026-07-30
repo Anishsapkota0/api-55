@@ -1,5 +1,8 @@
 class CategoryController {
     create(req,res){
+        res.json({
+            data : ""
+        })
 
     }
 
@@ -7,6 +10,12 @@ class CategoryController {
 
     }
     fetchDetail(req,res){
+        const params = req.params
+        const query = req.query
+        res.json({
+            data : params,
+            query : query
+        })
 
     }
     Updatedetail(req,res){

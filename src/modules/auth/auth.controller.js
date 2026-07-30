@@ -1,8 +1,18 @@
  class AuthController{
    loginFunction(req,res){
+    const params = req.params
+    const query = req.query
+    const body = req.body
+
+     // validate
+
       //login definations
       res.json({
-        data :"Login"
+        data : {
+          body
+        },
+        message : "Login successful"
+        // query : query
       })
    }
 
