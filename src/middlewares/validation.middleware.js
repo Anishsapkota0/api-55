@@ -1,27 +1,37 @@
+const joi = require("joi")
+
 const bodyValidator = (schema)=>{
     return async (req,res,next)=>{
         try{
       const data = req.body;
       if (!data){
-        throw {code : 422 , message : " Data required", status : "Empty_Payload"}
+        next({code : 422 , message : " Data required", status : "Empty_Payload"})
       }
       console.log(data)
     //   console.log(data)
      let result = await schema.validateAsync(data, {abortEarly: false})
     //  console.log(result)
-
+   
+    next()
 
     }catch(exception){
-        console.log(exception)
+        let messagebag = {}
+        if (exception instanceof joi.ValidationError){
+            exception.details.map((error)=>{
+                messagebag[error.path.pop()]=error.message
+            })
+
+        }
+        // console.log(exception)
         //handle
-        next(exception)
+        next({code: 400, detail : messagebag, status: " Validaton_Error"})
 
     }
+    
     
 }
 
 }
-
 bodyValidator()
 
 module.exports= bodyValidator

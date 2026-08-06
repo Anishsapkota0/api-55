@@ -18,8 +18,20 @@
 
    registerFunction(req,res){
       //register definations
+        const body = req.body
+
+     // validate
+      //login definations
+      res.json({
+        data : {
+          body
+        },
+        message : "Registered  successfully"
+        // query : query
+      })
    }
- }
+   }
+ 
 
  const authCtrl = new AuthController()
 
