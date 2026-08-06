@@ -10,7 +10,7 @@ const RegisterDTO = Joi.object({
     email : Joi.string().email().required(),
     password : Joi.string().min(8).max(25).required(),
     confirmPassword : Joi.ref("password"),
-    role : Joi.string().allow("user","authr").default("user"),
+    role : Joi.string().allow("user","author").default("user"),
     image : Joi.string().allow(null,'').optional().default(null)
 
 })
