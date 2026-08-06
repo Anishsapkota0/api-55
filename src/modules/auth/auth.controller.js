@@ -19,12 +19,14 @@
    registerFunction(req,res){
       //register definations
         const body = req.body
+        const file = req.file
 
      // validate
       //login definations
       res.json({
         data : {
-          body
+          data : req.body,
+          file: req.file
         },
         message : "Registered  successfully"
         // query : query
